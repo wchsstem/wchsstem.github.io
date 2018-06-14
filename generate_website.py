@@ -22,12 +22,7 @@ def require_head(path_to_root, title, extras):
                 else:
                     line = echo_path_to_root.sub(path_to_root, line)
                     output += line
-
     return output
-
-
-def require_foot():
-    return "</body></html>"
 
 
 path_to_root_re = re.compile(r"^\$path_to_root = '(.*)';$")
@@ -36,7 +31,6 @@ extras_re = re.compile(r"^\$extras = '(.*)';$")
 require_re = re.compile(r"^require\('(.*)'\);$")
 
 head_re = re.compile(r"^(../)*templates/head.php$")
-foot_re = re.compile(r"^(../)*templates/foot.php$")
 
 with open("site_manifest.json") as site_manifest_json:
     site_manifest = json.load(site_manifest_json)
@@ -71,8 +65,6 @@ for page in site_manifest:
         for require in requires:
             if head_re.match(require):
                 output_file.write(require_head(path_to_root, title, extras))
-            elif foot_re.match(require):
-                output_file.write(require_foot())
             else:
                 with open(require) as required_file:
                     for line in required_file:

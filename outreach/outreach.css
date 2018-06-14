@@ -4,9 +4,3 @@ img {
     margin: auto;
     padding: var(--default-padding);
 }
-
-@media only screen and (min-width: 6in) {
-    img {
-        float: left;
-    }
-}
