@@ -1,0 +1,25 @@
+#editor {
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 33%;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#world {
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 67%;
+}
+div {
+    margin: 1px;
+}
+html {
+    overflow: hidden;
+}

@@ -1,0 +1,105 @@
+:root {
+    font-family: "GidoleRegular", sans-serif;
+    font-size: 16px;
+
+    --default-padding: 0.25in;
+    --header-font-stack: "BebasNeueBold", sans-serif;
+    
+    /* http://paletton.com/#uid=a2M3u0kqKmci9tVmSq8uzi2DTcJ */
+    --main-color: #299218;
+    --second-color: #093d5c;
+    --main-color-light: #64c555;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--header-font-stack);
+    padding-top: var(--default-padding);
+}
+
+h1 {
+    padding: 0;
+    font-size: 200%;
+    text-align: center;
+    color: #ffffff;
+}
+
+h1 > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h2 {
+    font-size: 150%;
+}
+
+h3 {
+    font-size: 125%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: var(--default-padding);
+    background-color: var(--main-color);
+}
+
+header > nav {
+    margin: auto;
+}
+
+header > nav > ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+}
+
+header > nav > ul > li {
+    margin: 0.1in;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+header > nav > ul > li > a {
+    color: var(--main-color-light);
+}
+
+article {
+    padding: 0 var(--default-padding) 0 var(--default-padding);
+}
+
+p {
+    padding-bottom: var(--default-padding);
+}
+
+a {
+    color: var(--second-color);
+}
+
+.bullets {
+    margin-left: 1em;
+    list-style-type: disc;
+}
+
+@media only screen and (min-width: 6in) {
+    h1 {
+        text-align: left;
+    }
+
+    header {
+        flex-direction: row;
+    }
+
+    header > nav {
+        margin-right: 0.1in;
+    }
+
+    header > nav > ul {
+        flex-direction: row;
+    }
+
+    article {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}

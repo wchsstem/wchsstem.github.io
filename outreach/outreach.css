@@ -1,0 +1,11 @@
+img {
+    width: 2in;
+    display: block;
+    margin: auto;
+}
+
+@media only screen and (min-width: 6in) {
+    img {
+        float: left;
+    }
+}

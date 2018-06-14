@@ -1,0 +1,13 @@
+.member-photo {
+    float: left;
+    height: 1in;
+    margin-right: 0.1in;
+}
+
+.member-container > ul {
+    list-style-type: disc;
+}
+
+.member-container > ul > li {
+    margin-left: 1in;
+}

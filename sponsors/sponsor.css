@@ -1,0 +1,33 @@
+:root {
+    --large-size: 2in;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    margin: auto;
+}
+
+li > a {
+    display: flex;
+    flex-direction: column;
+}
+
+li > a > * {
+    margin: auto;
+}
+
+.logo-large-container {
+    width: var(--large-size);
+    height: var(--large-size);
+    display: flex;
+}
+
+.logo {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
