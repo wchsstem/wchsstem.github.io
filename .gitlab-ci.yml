@@ -3,9 +3,13 @@ pages:
   stage: deploy
   script:
   - php index.php > index.html
-  - php contact/index.php > contact/index.html
-  - php outreach/index.php > outreach/index.html
-  - php sponsors/index.php > sponsors/index.html
+  - cd contact
+  - php index.php > index.html
+  - cd ../outreach
+  - php index.php > index.html
+  - cd ../sponsors
+  - php index.php > index.html
+  - cd ..
   - rm index.php contact/index.php outreach/index.php sponsors/index.php
   - mkdir .public
   - cp -r * .public
