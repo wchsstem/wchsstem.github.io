@@ -1,0 +1,22 @@
+[
+  {
+    "path": "contact",
+    "input": "index.php",
+    "output": "index.html"
+  },
+  {
+    "path": "outreach",
+    "input": "index.php",
+    "output": "index.html"
+  },
+  {
+    "path": "sponsors",
+    "input": "index.php",
+    "output": "index.html"
+  },
+  {
+    "path": ".",
+    "input": "index.php",
+    "output": "index.html"
+  }
+]

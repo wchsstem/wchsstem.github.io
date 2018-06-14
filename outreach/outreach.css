@@ -2,6 +2,7 @@ img {
     width: 2in;
     display: block;
     margin: auto;
+    padding: var(--default-padding);
 }
 
 @media only screen and (min-width: 6in) {

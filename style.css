@@ -28,6 +28,10 @@ h1 > a {
     color: inherit;
 }
 
+h1 > a:hover {
+    text-decoration: underline;
+}
+
 h2 {
     font-size: 150%;
 }
@@ -64,6 +68,10 @@ header > nav > ul > li > a {
     color: var(--main-color-light);
 }
 
+header > nav > ul > li > a:hover {
+    color: #ffffff;
+}
+
 article {
     padding: 0 var(--default-padding) 0 var(--default-padding);
 }
@@ -79,6 +87,7 @@ a {
 .bullets {
     margin-left: 1em;
     list-style-type: disc;
+    padding-bottom: var(--default-padding);
 }
 
 @media only screen and (min-width: 6in) {
