@@ -1,4 +1,4 @@
-img {
+img:not(.logo) {
     width: 2in;
     display: block;
     margin: auto;
