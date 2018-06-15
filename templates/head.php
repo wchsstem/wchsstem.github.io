@@ -2,6 +2,14 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width"/>
+        <meta charset="utf-8"/>
+        <meta name="description" content="
+        <?php
+            if (isset($description) && !empty($description)) {
+                echo $description;
+            }
+        ?>
+        "/>
         <title>
         <?php
             if (isset($title) && !empty($title)) {
@@ -12,7 +20,8 @@
         <link rel="stylesheet" href="<?php echo $path_to_root ?>reset.css"/>
         <link rel="stylesheet" href="<?php echo $path_to_root ?>style.css"/>
         <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebusneuebold" type="text/css"/>
-        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gidole-regular" type="text/css"/> 
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gidole-regular" type="text/css"/>
+        <link rel="icon" href="<?php echo $path_to_root ?>favicon.png"/>
         <?php
             if (isset($extras) && !empty($extras)) {
                 echo $extras;
@@ -21,6 +30,7 @@
     </head>
     <body>
         <header>
+            <img class="logo" src="<?php echo $path_to_root ?>example_logo.svg" alt="Logo"/>
             <h1><a href="<?php echo $path_to_root ?>">WCHS STEM Club</a></h1>
             <nav>
                 <ul>

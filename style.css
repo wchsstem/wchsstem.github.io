@@ -21,11 +21,13 @@ h1 {
     font-size: 200%;
     text-align: center;
     color: #ffffff;
+    display: flex;
 }
 
 h1 > a {
     text-decoration: none;
     color: inherit;
+    margin: auto;
 }
 
 h1 > a:hover {
@@ -111,4 +113,9 @@ a {
         margin-left: 15%;
         margin-right: 15%;
     }
+}
+
+.logo {
+    margin: auto var(--default-padding);
+    height: 0.5in;
 }
