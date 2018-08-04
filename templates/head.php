@@ -37,8 +37,8 @@
                     <li><a href="<?php echo $path_to_root ?>">Home</a></li>
                     <li><a href="<?php echo $path_to_root ?>#about">About</a></li>
                     <li><a href="<?php echo $path_to_root ?>sponsors">Sponsors</a></li>
-                    <li><a href="<?php echo $path_to_root ?>outreach">Our outreach</a></li>
-                    <li><a href="<?php echo $path_to_root ?>contact">Contact us</a></li>
+                    <li><a href="<?php echo $path_to_root ?>outreach">Outreach</a></li>
+                    <li><a href="<?php echo $path_to_root ?>contact">Contact</a></li>
                 </ul>
             </nav>            
         </header>
