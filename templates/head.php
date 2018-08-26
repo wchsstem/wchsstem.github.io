@@ -10,6 +10,14 @@
             }
         ?>
         "/>
+        <meta name="title" content="
+        <?php
+            if (isset($title) && !empty($title)) {
+                echo $title . ' | ';
+            }
+        ?>
+        "/>
+
         <title>
         <?php
             if (isset($title) && !empty($title)) {
