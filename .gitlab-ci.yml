@@ -13,6 +13,7 @@ pages:
   - rm index.php contact/index.php outreach/index.php sponsors/index.php
   - mkdir .public
   - cp -r * .public
+  - cp -r .well-known .public
   - mv .public public
   artifacts:
     paths:
