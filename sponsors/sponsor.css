@@ -2,25 +2,22 @@
     --large-size: 2in;
 }
 
-ul {
+ul:not(.bullets) {
     display: flex;
     flex-wrap: wrap;
 }
 
-li {
+ul:not(.bullets) li {
     margin: auto;
-}
-
-li {
     display: flex;
     flex-direction: column;
 }
 
-li > * {
+ul:not(.bullets) li > * {
     margin: auto;
 }
 
-li h4 {
+ul:not(.bullets) li h4 {
 	font-size: 150%;
 }
 
