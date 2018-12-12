@@ -9,6 +9,8 @@ pages:
   - php index.php > index.html
   - cd ../sponsors
   - php index.php > index.html
+  - cd ../classes
+  - php index.php > index.html
   - cd ..
   - rm index.php contact/index.php outreach/index.php sponsors/index.php
   - mkdir .public
