@@ -20,6 +20,11 @@
     "output": "index.html"
   },
   {
+    "path": "classes",
+    "input": "index.php",
+    "output": "index.html"
+  },
+  {
     "path": ".",
     "input": "index.php",
     "output": "index.html"
