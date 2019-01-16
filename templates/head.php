@@ -44,6 +44,7 @@
                     <li><a href="<?php echo $path_to_root ?>sponsors">Sponsors</a></li>
                     <li><a href="<?php echo $path_to_root ?>outreach">Outreach</a></li>
                     <li><a href="<?php echo $path_to_root ?>contact">Contact</a></li>
+                    <li><a href="<?php echo $path_to_root ?>classes">Classes</a></li>
                 </ul>
             </nav>            
         </header>
