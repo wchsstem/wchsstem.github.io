@@ -3,6 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width"/>
         <meta charset="utf-8"/>
+        <meta name="keywords" content="Churchill STEM Club,Winston Churchill STEM Club, WCHS STEM Club,STEM Club,Churchill High School STEM Club,Winston Churchill High School STEM Club,Churchill STEM"/>
         <?php
             if (isset($description) && !empty($description)) {
                 echo "<meta name='description' content='$description'/>";
@@ -12,16 +13,16 @@
         <?php
             if (isset($title) && !empty($title)) {
                 echo "<meta name='title' content='$title'/>";
+            } else {
+                echo '<meta name="title" content="Winston Churchill High School STEM Club"/>';
             }
         ?>
 
-        <title>
-        <?php
+        <title><?php
             if (isset($title) && !empty($title)) {
                 echo "$title | ";
             }
-        ?>
-        WCHS STEM Club</title>
+        ?>WCHS STEM Club</title>
         <link rel="stylesheet" href="<?php echo $path_to_root ?>reset.css"/>
         <link rel="stylesheet" href="<?php echo $path_to_root ?>style.css"/>
         <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebusneuebold" type="text/css"/>
