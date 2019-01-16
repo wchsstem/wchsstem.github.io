@@ -3,25 +3,22 @@
     <head>
         <meta name="viewport" content="width=device-width"/>
         <meta charset="utf-8"/>
-        <meta name="description" content="
         <?php
             if (isset($description) && !empty($description)) {
-                echo $description;
+                echo "<meta name='description' content='$description'/>";
             }
         ?>
-        "/>
-        <meta name="title" content="
+        
         <?php
             if (isset($title) && !empty($title)) {
-                echo $title . ' | ';
+                echo "<meta name='title' content='$title'/>";
             }
         ?>
-        "/>
 
         <title>
         <?php
             if (isset($title) && !empty($title)) {
-                echo $title . ' | ';
+                echo "$title | ";
             }
         ?>
         WCHS STEM Club</title>
