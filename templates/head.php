@@ -25,8 +25,7 @@
         ?>WCHS STEM Club</title>
         <link rel="stylesheet" href="<?php echo $path_to_root ?>reset.css"/>
         <link rel="stylesheet" href="<?php echo $path_to_root ?>style.css"/>
-        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebusneuebold" type="text/css"/>
-        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/gidole-regular" type="text/css"/>
+        <link rel="stylesheet" href="<?php echo $path_to_root ?>fonts.css"/>
         <link rel="icon" href="<?php echo $path_to_root ?>favicon.png"/>
         <?php
             if (isset($extras) && !empty($extras)) {
