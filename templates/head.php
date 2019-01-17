@@ -26,7 +26,7 @@
         <link rel="stylesheet" href="<?php echo $path_to_root ?>reset.css"/>
         <link rel="stylesheet" href="<?php echo $path_to_root ?>style.css"/>
         <link rel="stylesheet" href="<?php echo $path_to_root ?>fonts.css"/>
-        <link rel="icon" href="<?php echo $path_to_root ?>favicon.png"/>
+        <link rel="icon" href="<?php echo $path_to_root ?>favicon.ico"/>
         <?php
             if (isset($extras) && !empty($extras)) {
                 echo $extras;
@@ -35,7 +35,10 @@
     </head>
     <body>
         <header>
-            <img class="logo" src="<?php echo $path_to_root ?>example_logo.svg" alt="Logo"/>
+            <picture>
+                <source type="image/webp" srcset="<?php echo $path_to_root ?>logo.webp"/>
+                <img class="logo" src="<?php echo $path_to_root ?>logo.png" alt="STEM Club Logo"/>
+            </picture>
             <h1><a href="<?php echo $path_to_root ?>">WCHS STEM Club</a></h1>
             <nav>
                 <ul>
