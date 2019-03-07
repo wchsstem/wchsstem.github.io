@@ -24,7 +24,6 @@ h1 {
     display: flex;
     white-space: nowrap;
 }
-
 h1 > a {
     text-decoration: none;
     color: inherit;
@@ -81,11 +80,13 @@ article {
 }
 
 p {
+    line-height: 1.25em;
     padding-bottom: 0.25in;
 }
 
 a {
-    color: #093d5c;
+    /* color: #093d5c; */
+    color: #fff;
 }
 
 .bullets {
