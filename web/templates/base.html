@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% block title %}{% endblock %}</title>
+
+    <link rel="icon" type="image/svg+xml" href="/static/img/logo.svg" />
+    <link rel="alternate icon" href="/static/img/logo.ico" />
+    <link rel="mask-icon" href="/static/img/logo.svg" color="#299218" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/static/style/reset.css" />
+    <link rel="stylesheet" href="/static/style/fonts.css" />
+    <link rel="stylesheet" href="/static/style/style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    {% block head %}{% endblock %}
+</head>
+<body>
+<header>
+    <a href="/"><img class="logo" src="/static/img/logo.svg" alt="STEM Club Logo" /></a>
+    <h1><a href="/">Churchill STEM Club</a></h1>
+    <nav>
+        <ul>
+            <li><a href="/about">About</a></li>
+            <li><a href="/members">Members</a></li>
+            <li><a href="/alumni">Alumni</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/join">Join</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+{% block body %}{% endblock %}
+</main>
+<footer>
+    <p>Copyright © 2020</p>
+    <p><a href="/contact">Contact us</a></p>
+    <div>
+        <a class="fa fa-instagram left" href="https://www.instagram.com/churchillstem/"></a>
+        <a class="fa fa-envelope left" href="mailto:churchillstemclub@gmail.com"></a>
+        <span>|</span>
+        <a href="/privacy" class="right">Privacy Policy</a>
+    </div>
+</footer>
+</body>
+</html>

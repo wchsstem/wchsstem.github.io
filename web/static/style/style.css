@@ -1,0 +1,200 @@
+:root {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+
+    /* --default-padding: 0.25in;
+    --header-font-stack: "BebasNeueBold", sans-serif; */
+    
+    /* http://paletton.com/#uid=a2M3u0kqKmci9tVmSq8uzi2DTcJ */
+    /* --main-color: #299218;
+    --second-color: #093d5c;
+    --main-color-light: #64c555; */
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: "BebasNeueBold", sans-serif;
+    padding: 0;
+    font-size: 32px;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    white-space: nowrap;
+}
+
+h1 > a {
+    text-decoration: none;
+    color: inherit;
+    margin: auto;
+}
+
+h1 > a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 150%;
+    padding-top: 0.25in;
+}
+
+h3 {
+    font-size: 135%;
+    padding-top: 0.15in;
+}
+
+h4 {
+    font-size: 125%;
+    padding-top: 0.1in;
+}
+
+h4 + h4 {
+    padding-top: 6px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 0.25in;
+    background-color: #299218;
+    flex-wrap: wrap;
+}
+
+header > nav {
+    margin: auto;
+}
+
+header > nav > ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+}
+
+header > nav > ul > li {
+    margin: 0.1in;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+header > nav > ul > li > a {
+    color: #dddddd;
+    text-decoration: none;
+    font-size: 115%;
+    font-weight: bold;
+}
+
+header > nav > ul > li > a:hover {
+    color: #ffffff;
+}
+
+p {
+    padding-bottom: 0.25in;
+    line-height: 125%;
+}
+
+a {
+    color: #093d5c;
+}
+
+:not(nav) > ul:not(.no-bullets) > li {
+    margin-left: 1em;
+    list-style-type: disc;
+    padding-bottom: 0.25ex;
+}
+
+@media only screen and (min-width: 6in) {
+    h1 {
+        text-align: left;
+    }
+
+    header {
+        flex-direction: row;
+    }
+
+    header > nav {
+        margin-right: 0.1in;
+    }
+
+    header > nav > ul {
+        flex-direction: row;
+    }
+
+    body > :not(header) > :not(.image-box) {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+.logo {
+    margin: auto 0.25in;
+    height: 0.5in;
+}
+
+a.button {
+    position: relative;
+    background-color: #299218;
+    padding: 10px 40px;
+    border-radius: 100px;
+    margin: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 3px 0 -1px #093d5c;
+    color: #ffffff !important;
+}
+
+a.button:hover {
+    bottom: 1px;
+    text-decoration: underline;
+    box-shadow: 0 5px 2px -1px #093d5c;
+}
+
+html {
+    min-height: 100%;
+    display: flex;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    box-sizing: border-box;
+    padding: 0.1in;
+    background-color: #282828;
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer > * {
+    padding-bottom: 0.1in;
+}
+
+footer > div {
+    display: flex;
+}
+
+footer > div > * {
+    margin-right: 0.1in;
+}
+
+footer a {
+    color: #299218;
+}
+
+footer a.fa {
+    text-decoration: none;
+    color: #dddddd;
+}

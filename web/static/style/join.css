@@ -1,0 +1,25 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-top: 0.03in;
+    margin-bottom: 0.1in;
+}
+
+.required-asterisk {
+    color: red;
+}
+
+.grouped {
+    display: flex;
+}
+
+input[type=submit] {
+    max-width: 1in;
+}
+
+.bad-input {
+    background-color: red;
+}

@@ -1,0 +1,81 @@
+h2, h3, h4, h5, h6 {
+    font-family: "BebasNeueBold", sans-serif;
+}
+
+.image-box {
+    position: relative;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.image-box img {
+    filter: brightness(40%);
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+    z-index: -1;
+}
+
+#intro > p {
+    font-size: 200%;
+}
+
+article {
+    font-size: 150%;
+    font-weight: 900;
+}
+
+.image-box > * {
+    text-align: center;
+    color: #ffffff;
+}
+
+#intro h2 {
+    font-size: 500%;
+    text-align: center;
+    color: #ffffff;
+}
+
+#intro p {
+    font-size: 200%;
+    padding: 0 20%;
+    font-weight: bold;
+}
+
+.image-box > :first-child {
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-box > :last-child {
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-box a {
+    color: #299218;
+}
+
+#design-program img {
+    filter: brightness(80%);
+}
+
+.image-box.right > * {
+    margin-right: 1in;
+    text-align: right;
+}
+
+.image-box.left > * {
+    margin-left: 1in;
+    text-align: left;
+}
