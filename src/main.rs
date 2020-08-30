@@ -2,10 +2,10 @@ use actix_files as fs;
 use actix_web::dev::Server;
 use actix_web::{get, App, HttpResponse, HttpServer, Responder};
 use askama::Template;
+use std::env;
 use std::error::Error;
 use std::fs::File;
 use std::io::Write;
-use std::env;
 use std::path::{Path, PathBuf};
 
 struct Class {
