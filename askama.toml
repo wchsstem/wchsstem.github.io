@@ -1,5 +1,0 @@
-# Askama is a tool that reads in all of the templates in web/templates/ and converts them into Rust code at compile
-# time. The result is a very fast way to generate HTML as we need it.
-
-[general]
-dirs = ["web/templates"]

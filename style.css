@@ -1,0 +1,341 @@
+:root {
+    /* Declare CSS variables (see STEM Club Figma style library) */
+    --blue: #3d72ff;
+    --dark-blue: #2e53b8;
+    --light-blue: #b2c7ff;
+    --green: #43a83c;
+    --dark-green: #2b8f24;
+    --light-green: #c9ebc7;
+
+    --gradient: linear-gradient(90deg, #1F005C 0%, #002A82 14.29%, #004599 28.57%, #005C9E 42.86%, #007292 57.14%, #00867A 71.43%, #00995B 85.71%, #43A83C 100%);
+
+    --gray: #595959;
+    --stroke: #d9d9d9;
+
+    --fill: #f9f9f9;
+    --darker-fill: #e6e6e6;
+
+    font-family: "Barlow", sans-serif;
+    font-size: 16px;
+
+    color: var(--gray);
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--fill);
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+/* Navbar */
+
+nav {
+    /* height: 3rem; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.logo {
+    height: 2.25rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.navbar-link {
+    margin: 0 0.1rem;
+    border-radius: calc(0.33rem * 0.75);
+}
+
+.navbar-link:hover {
+    color: var(--dark-blue);
+    background-color: var(--light-blue);
+}
+
+.navbar-title {
+    margin-right: auto;
+}
+
+.navbar-title,
+.navbar-link {
+    padding: 0.5rem 0.75rem;
+    color: var(--gray);
+    font-weight: 600;
+}
+
+.navbar-link:last-of-type {
+    margin-right: 1rem;
+}
+
+/* Hero image */
+
+.hero {
+    background: var(--gradient);
+    width: 100vw;
+    height: 30rem;
+
+    /* Flexbox to align center card */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-card {
+    background: var(--fill);
+    width: 45rem;
+    border-radius: 0.33rem;
+}
+
+.card-heading {
+    font-size: 1.5em;
+    margin: 1.5rem 1rem;
+    font-weight: 600;
+}
+
+.accent-strip {
+    height: 5rem;
+    background: var(--darker-fill);
+    border-radius: 0 0 0.33rem 0.33rem;
+    padding-left: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-top: 2px solid var(--stroke);
+}
+
+.accent-strip>button {
+    height: 3rem;
+}
+
+.accent-strip button+button {
+    margin-left: 1rem;
+}
+
+button {
+    color: var(--fill);
+    border: none;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    font-family: "Barlow", sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-radius: calc(0.33rem * 0.75);
+    transition: background-color 0.1s;
+}
+
+.green {
+    background: var(--green);
+    color: var(--fill);
+}
+
+button:hover.green {
+    background: var(--dark-green);
+}
+
+button:hover.blue {
+    background: var(--dark-blue);
+}
+
+.blue {
+    background: var(--blue);
+    color: var(--fill);
+}
+
+/* Content */
+
+section {
+    margin: 1.5rem 0;
+}
+
+article {
+    margin: auto;
+    /* 45rem width of title card minus 2rem for margin */
+    /* Better alignment */
+    width: 43rem;
+}
+
+/* Section 1 - Details */
+section h1 {
+    font-size: 2.25em;
+    margin: 0;
+}
+
+hr {
+    margin: 0.5rem 0;
+    border: none;
+    border-top: 2px solid var(--stroke);
+}
+
+/* Grid layout for details */
+.details-grid {
+    display: grid;
+    /* 2x2 grid */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0.5rem;
+}
+
+.details-item {
+    background: var(--darker-fill);
+    border-radius: 0.33rem;
+    padding: 0.75rem;
+    border: 2px solid var(--stroke);
+}
+
+.detail-card-label,
+.detail-card-text {
+    margin: 0;
+}
+
+.detail-card-label {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+/* Section 2 - About */
+
+article p {
+    font-size: 1.25em;
+    margin: 0;
+}
+
+/* Section 3 - activities / About Cont. */
+
+.activities-container {
+    display: grid;
+    grid-gap: 1rem;
+    /* 2 columns and 5 rows */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.activities-container>div {
+    width: 100%;
+    border: 2px solid var(--stroke);
+    border-radius: 0.33rem;
+}
+
+/* Align elements of grid */
+
+#ftc-robotics {
+    /* Span all columns */
+    grid-column: span 2;
+}
+
+#image1 {
+    grid-row: 2;
+    background-image: url("assets/robot.webp");
+}
+
+#hackathons-and-workshops {
+    grid-row: 2;
+}
+
+#ctfs {
+    grid-row: 3;
+}
+
+#image2 {
+    grid-row: 3;
+    background-image: url("assets/ctf.webp");
+}
+
+#image3 {
+    grid-row: 4;
+    background-image: url("assets/map.webp")
+}
+
+#club-projects {
+    grid-row: 4;
+}
+
+#ssl {
+    /* grid-row: 5; */
+    grid-column: span 2;
+}
+
+#image1,
+#image2,
+#image3 {
+    background-position: center;
+    background-size: cover;
+}
+
+.activities-container h2 {
+    font-size: 1.25em;
+    margin: 0;
+    border-radius: 0.33rem 0.33rem 0 0;
+    padding: 0.5rem 0.75rem;
+    color: var(--fill);
+}
+
+.activities-container .blue-label {
+    background: var(--dark-blue);
+}
+
+.activities-container .green-label {
+    background: var(--dark-green);
+}
+
+.activities-container p {
+    margin: 0.5rem 0.75rem;
+}
+
+/* Section 4 - Quote block */
+
+.quote-block {
+    background: var(--gradient);
+    padding: 2rem;
+    text-align: center;
+    color: var(--fill);
+}
+
+.quote-block h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+/* Section 5 - Footer */
+
+footer {
+    width: 43rem;
+    margin: auto;
+}
+
+footer>h3 {
+    font-weight: 600;
+}
+
+.footer-container {
+    display: flex;
+}
+
+.footer-container>div {
+    flex: 1;
+}
+
+.footer-container h4 {
+    margin: 1rem 0rem;
+}
+
+.contact p {
+    font-size: 1em;
+}
+
+/* Social media */
+ion-icon {
+    font-size: 1.5em;
+    padding: 0.25rem;
+}
+
+ion-icon:hover {
+    color: var(--dark-blue);
+    background-color: var(--light-blue);
+    border-radius: 0.33rem;
+}
