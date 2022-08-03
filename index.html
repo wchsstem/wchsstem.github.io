@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Churchill STEM Club</title>
+    <title>STEM Club</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="/assets/favicon.ico">
@@ -12,24 +12,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 
+    <script src="main.js" defer></script>
+
 </head>
 
 <body>
-    <nav id="home">
+    <nav>
         <img src="/assets/logo.png" alt="STEM Club logo" class="logo">
         <a class="navbar-title" href="#home">Churchill STEM Club</a>
-        <a class="navbar-link" href="#about">About</a>
-        <a class="navbar-link" href="#activities">Activities</a>
-        <a class="navbar-link" href="#footer">Contact</a>
-        <a class="navbar-link" id="join">Join</a>
+        <button class="menu-toggle">
+            <ion-icon name="menu-outline"></ion-icon>
+        </button>
+        <div class="navbar-links">
+            <div class="link-container">
+                <a class="navbar-link" href="#about">About</a>
+                <a class="navbar-link" href="#activities">Activities</a>
+                <a class="navbar-link" href="#footer">Contact</a>
+                <a class="navbar-link" id="join">Join</a>
+            </div>
+        </div>
     </nav>
     <div class="hero" id="home">
         <div class="title-card">
-            <h2 class="card-heading">Promoting innovation, creative thinking, and fun in STEM fields @WCHS</h1>
-                <div class="accent-strip">
-                    <a class="button green">Sign up</a>
-                    <a class="blue button" href="https://discord.gg/3kxwfx6hC4">Discord</a>
-                </div>
+            <h2 class="card-heading">Promoting innovation, creative thinking, and fun in STEM fields @WCHS</h2>
+            <div class="accent-strip">
+                <a class="button green">Sign up</a>
+                <a class="blue button" href="https://discord.gg/3kxwfx6hC4">Discord</a>
+            </div>
         </div>
     </div>
     <article>
@@ -55,14 +64,15 @@
                 </div>
             </div>
         </section>
-        <section id="about">
-            <h1>About</h1>
+        <section>
+            <h1 id="about">About</h1>
             <hr>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis
                 tellus. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis
                 convallis diam sit amet lacinia. Aliquam in elementum tellus.
             </p>
+            <br>
             <p>
                 Curabitur tempor quis eros tempus lacinia. Nam bibendum pellentesque quam a convallis. Sed ut vulputate
                 nisi. Integer in felis sed leo vestibulum venenatis. Suspendisse quis arcu sem. Aenean feugiat ex eu
@@ -72,10 +82,9 @@
                 nisi. Proin vitae facilisis nisi, ac posuere leo.
             </p>
         </section>
-        <!-- <hr> -->
         <section class="activities-container" id="activities">
             <div id="ftc-robotics">
-                <h2 class="blue-label">FTC Robotics</h2>
+                <h2 class="blue-label" id="activities-scroll">FTC Robotics</h2>
                 <p>
                     STEM Club team competes in FTC, a major international robotics competition. The season runs during
                     1st semester & early 2nd. After rules and game for the year are released, we design, build, and
@@ -84,7 +93,7 @@
                     up small objects like balls and cubes, then push, launch, or position those things into a goal.
                 </p>
             </div>
-            <div id="image1"></div>
+            <div id="image1" class="image"></div>
             <div id="hackathons-and-workshops">
                 <h2 class="green-label">Hackathons and Workshops</h2>
                 <p>
@@ -100,8 +109,8 @@
                     PicoCTF, ångstromCTF, and HSCTF.
                 </p>
             </div>
-            <div id="image2"></div>
-            <div id="image3"></div>
+            <div id="image2" class="image"></div>
+            <div id="image3" class="image"></div>
             <div id="club-projects">
                 <h2 class="green-label">Club Projects</h2>
                 <p>
