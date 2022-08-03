@@ -105,8 +105,8 @@ nav {
     height: 100vh !important;
 }
 
-/* Breakpoint -> 50rem */
-@media (max-width: 50rem) {
+/* Breakpoint -> 768px */
+@media (max-width: 768px) {
 
     .navbar-links {
         display: flex;
@@ -228,7 +228,7 @@ nav {
     color: var(--fill);
 }
 
-@media (max-width: 50rem) {
+@media (max-width: 768px) {
     .hero {
         height: 20rem;
     }
@@ -290,7 +290,7 @@ hr {
     font-weight: bold;
 }
 
-@media (max-width: 50rem) {
+@media (max-width: 768px) {
     .details-grid {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(1fr, 4);
@@ -315,7 +315,7 @@ article p {
 }
 
 
-@media (max-width: 50rem) {
+@media (max-width: 768px) {
     .activities-container {
         grid-auto-columns: 1fr;
         grid-template-rows: repeat(1fr, 4);
@@ -371,7 +371,7 @@ article p {
     background-size: cover;
 }
 
-@media (max-width: 50rem) {
+@media (max-width: 768px) {
     .activities-container {
         display: flex;
         flex-direction: column;
@@ -459,7 +459,7 @@ ion-icon {
     padding: 0.25rem;
 }
 
-@media (max-width: 50rem) {
+@media (max-width: 768px) {
     .footer-category ion-icon {
         font-size: 2em;
     }
